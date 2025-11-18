@@ -23,7 +23,9 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@main
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
 
     - name: SetUp environment
       run: |
